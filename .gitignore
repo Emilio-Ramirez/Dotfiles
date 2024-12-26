@@ -1,2 +1,3 @@
 github-copilot/hosts.json
 nvim/lua/plugins/codecompanion.lua
+fish/fish_variables
