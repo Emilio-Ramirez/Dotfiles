@@ -9,25 +9,24 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
   spec = {
-    -- add LazyVim and import its plugins
+    -- Core and Theme
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-    -- import any extras modules here
+    -- Language Support and Tools
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.python" },
-    { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
-    { import = "lazyvim.plugins.extras.lang.kotlin" },
     { import = "lazyvim.plugins.extras.lang.omnisharp" },
+    -- UI and Features:
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
-    { import = "lazyvim.plugins.extras.dap.core" },
-    -- import/override with your plugins
+
+    -- Plugins in the `plugins` directory
     { import = "plugins" },
   },
   defaults = {
@@ -40,6 +39,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   checker = { enabled = true }, -- automatically check for plugin updates
+  -- Performance optimizations
   performance = {
     rtp = {
       -- disable some rtp plugins
