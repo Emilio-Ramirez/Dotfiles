@@ -3,3 +3,4 @@ nvim/lua/plugins/codecompanion.lua
 fish/fish_variables
 nvim/lazy-lock.json
 *.DS_Store
+llm/models/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf
