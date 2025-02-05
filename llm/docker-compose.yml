@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  llama-server:
+    image: ghcr.io/ggerganov/llama.cpp:server  # Using official server image
+    ports:
+      - "8088:8088"
+    volumes:
+      - ~/.config/llm/models:/models:ro
+    deploy:
+      resources:
+        limits:
+          memory: 12G
+        reservations:
+          memory: 8G
+    restart: unless-stopped
+    command: [
+      "-m", "/models/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf",
+      "--port", "8088",
+      "--host", "0.0.0.0",
+      "--ctx-size", "2048",
+      "--threads", "4"
+    ]

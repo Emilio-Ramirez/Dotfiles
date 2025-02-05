@@ -24,7 +24,7 @@ llm/
 Start the local server:
 
 ```bash
-llama-server -m models/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf --port 8088
+llama-server -m ~/.config/llm/models/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf --port 8088
 ```
 
 ## Technical Details
@@ -45,4 +45,31 @@ Default settings:
 
 ## Integration
 
-This model is integrated with LazyVim for code completion and assistance. Configuration can be found in the nvim config directory.
+This model is integrated with LazyVim for code completion and assistance.
+Configuration can be found in the [nvim documentation](../nvim/README.md).
+
+## Docker Alternative
+
+If you prefer to run the server in a container, you can use Docker:
+
+### Prerequisites
+
+1. Docker installed and running
+2. At least 12GB of available RAM
+3. Model file in `~/.config/llm/models/`
+
+### Starting with Docker
+
+Start the server in detached mode:
+
+```bash
+docker-compose up -d
+```
+
+Stop the server:
+
+```bash
+docker-compose down
+```
+
+The server can also be managed through the Docker Desktop Dashboard.
