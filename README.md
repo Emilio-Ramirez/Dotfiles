@@ -1,15 +1,3 @@
-<!--toc:start-->
-
-- [Overview](#overview)
-  - [LLM](#llm)
-  - [Neovim](#neovim)
-  - [Fish Shell](#fish-shell)
-  - [Sketchybar](#sketchybar)
-  - [Tmux](#tmux)
-  - [Yabai](#yabai)
-  <!--toc:end-->
-
-````markdown
 # Dotfiles
 
 This repository contains my personal configuration files for various tools and applications.
@@ -33,7 +21,7 @@ cd dotfiles
 # Example for Neovim
 ln -s $(pwd)/nvim ~/.config/nvim
 ```
-````
+
 
 ## Overview
 
