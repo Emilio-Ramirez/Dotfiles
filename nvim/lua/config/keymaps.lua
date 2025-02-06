@@ -18,3 +18,26 @@ local Util = require("lazyvim.util")
 vim.keymap.set("n", "<C-/>", function()
   Util.terminal(nil, { border = "rounded" })
 end, { desc = "Terminal (root dir )" })
+
+-- Code Companion keymaps
+vim.keymap.set(
+  { "n", "v" },
+  "<C-a>",
+  "<cmd>CodeCompanionActions<cr>",
+  { noremap = true, silent = true, desc = "Code Companion Actions" }
+)
+vim.keymap.set(
+  { "n", "v" },
+  "<LocalLeader>a",
+  "<cmd>CodeCompanionChat Toggle<cr>",
+  { noremap = true, silent = true, desc = "Toggle Code Companion Chat" }
+)
+vim.keymap.set(
+  "v",
+  "ga",
+  "<cmd>CodeCompanionChat Add<cr>",
+  { noremap = true, silent = true, desc = "Add to Code Companion Chat" }
+)
+
+-- Command abbreviation for Code Companion
+vim.cmd([[cnoreabbrev cc CodeCompanion]])
