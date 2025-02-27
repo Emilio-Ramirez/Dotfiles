@@ -1,21 +1,22 @@
 return {
   {
     "nvim-neotest/neotest",
-    dependencies = { "haydenmeade/neotest-jest" },
+    dependencies = {
+      "marilari88/neotest-vitest", -- Add this for Vitest support
+    },
     opts = function(_, opts)
+      -- Add the vitest adapter to your config
       table.insert(
         opts.adapters,
-        require("neotest-jest")({
-          jestCommand = "npm test --",
-          jestConfigFile = "custom.jest.config.js",
-          env = {CU = true},
-          cdw = function()
-            return vim.fn.getcwd()
-          end,
+        require("neotest-vitest")({
+          -- Optional configuration
+          vitestCommand = "npx vitest",
+          -- You can also pass environment variables if needed
+          env = {
+            CI = true,
+          },
         })
       )
-
-
     end,
   },
 }
