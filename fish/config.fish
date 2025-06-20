@@ -32,3 +32,6 @@ end
 set -gx NVM_DIR "$HOME/.nvm"
 
 bass source /opt/homebrew/opt/nvm/nvm.sh
+
+# D1 database query shortcut
+alias d1q='npx wrangler d1 execute DB --local --command'
