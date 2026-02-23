@@ -1,6 +1,8 @@
 github-copilot/hosts.json
+github-copilot/apps.json
 nvim/lua/plugins/codecompanion.lua
 fish/fish_variables
+fish/config.fish
 nvim/lazy-lock.json
 *.DS_Store
 llm/models/DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf
