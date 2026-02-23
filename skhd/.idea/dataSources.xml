@@ -8,5 +8,19 @@
       <jdbc-url>jdbc:postgresql://localhost/gcc</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="desarrollovitracoatbase@mysql.desarrollo-vitracoat.com" uuid="4a602e52-4ba4-47ca-bf13-24881da4ca45">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://mysql.desarrollo-vitracoat.com:3306/desarrollovitracoatbase</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="desarrollovitracoatbase@mysql.desarrollo-vitracoat.com [2]" uuid="54006ae5-bc15-4075-a3af-13ace42ed751">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.desarrollo-vitracoat.com:3306/desarrollovitracoatbase</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
