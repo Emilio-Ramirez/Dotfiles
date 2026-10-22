@@ -7,6 +7,7 @@
   - [Sketchybar](#sketchybar)
   - [Tmux](#tmux)
   - [Yabai](#yabai)
+  - [Karabiner](#karabiner)
   <!--toc:end-->
 
 ````markdown
@@ -22,6 +23,7 @@ This repository contains my personal configuration files for various tools and a
 - [Sketchybar](sketchybar/README.md)
 - [Tmux](tmux/README.md)
 - [Yabai](yabai/README.md)
+- [Karabiner](karabiner/README.md)
 
 ## Usage
 
@@ -57,3 +59,8 @@ See [Fish Shell README](/fish/README.md) for more details.
 
 Configuration files for Yabai, a tiling window manager for macOS.
 See [Yabai README](/yabai/README.md) for more details.
+
+### Karabiner
+
+Karabiner-Elements key remaps. Page Down toggles the LG TV's input between HDMI_1 and HDMI_2.
+See [Karabiner README](/karabiner/README.md) for more details.

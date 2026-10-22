@@ -1,0 +1,43 @@
+{
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Page Down \u2192 toggle LG TV between HDMI_1 and HDMI_2",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "page_down"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/Users/emilio/.config/karabiner/scripts/tv-toggle.sh"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "end"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                        }
+                    ]
+                }
+            ],
+            "virtual_hid_keyboard": {
+                "keyboard_type_v2": "ansi"
+            }
+        }
+    ]
+}

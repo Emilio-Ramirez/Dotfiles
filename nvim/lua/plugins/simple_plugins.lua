@@ -1,5 +1,18 @@
 return {
   {
+    "kawre/leetcode.nvim",
+    cmd = "Leet",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      arg = "Leet",
+      lang = "python3",
+    },
+  },
+  {
     "f-person/git-blame.nvim",
     event = "VeryLazy",
   },
